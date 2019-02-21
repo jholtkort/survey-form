@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey_form_css.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  </head>
+  <body>
+    <div id='main'>
+      <h1 id='title'>Survey Form</h1>
+
+      <p id='description'>Let us know how we can improve freeCodeCamp</p>
+
+      <form id="survey-form" action="index.html" method="post">
+        <label id='name-label' for="name">Name:  </label>
+        <input id='name' type="text" name="name" placeholder="Name" required>
+        <br>
+        <label id='email-label' class='labels' for="email">Email:  </label>
+        <input id='email' class="rightcolumn" type="email" name="email" placeholder="Email" required>
+        <br>
+        <label id='number-label' class='labels' for="Number">Number:  </label>
+        <input id='number' class="rightcolumn" type="number" name="number" placeholder="1111111111" min="0000000000" max="9999999999">
+        <br>
+        <label id="dropdown-label" class='labels' for="current_role_dropdown">Which option best descibes your current role?</label>
+        <select id='dropdown' class="rightcolumn" name="current_role_dropdown">
+          <option value="student">Student</option>
+          <option value="full_time_job">Full Time Job</option>
+          <option value="full_time_learner">Full Time Learner</option>
+          <option value="prefer_not_to_say">Prefer Not To Say</option>
+          <option value="other">Other</option>
+        </select>
+        <br>
+        <label id='recommend-radio-label' class='labels' for="recommend_radio">How likely is it that you would recommend freeCodeCamp to a friend?</label>
+        <div id="radio">
+          <input type="radio" name="recommend_radio" value="choice1">Definately <br>
+          <input type="radio" name="recommend_radio" value="choice2">Maybe <br>
+          <input type="radio" name="recommend_radio" value="choice3">Not sure <br>
+        </div>
+        <label id='checkbox-label' class='labels' for="checkbox">Things that should be improved in the future</label>
+        <div id='checkbox'>
+          <input type="checkbox" name="checkbox" value="front">Front-end Projects <br>
+          <input type="checkbox" name="checkbox" value="back">Back-end Projects <br>
+          <input type="checkbox" name="checkbox" value="data">Data Visulation <br>
+          <input type="checkbox" name="checkbox" value="challenges">Challenges <br>
+          <input type="checkbox" name="checkbox" value="open_source">Open Source Community <br>
+          <input type="checkbox" name="checkbox" value="gitter">Gitter help rooms <br>
+          <input type="checkbox" name="checkbox" value="videos">Videos <br>
+          <input type="checkbox" name="checkbox" value="meetups">City Meetups <br>
+          <input type="checkbox" name="checkbox" value="wiki">Wiki <br>
+          <input type="checkbox" name="checkbox" value="forum">Forum <br>
+          <input type="checkbox" name="checkbox" value="courses">Additional Courses <br>
+        </div>
+        <label id='textarea-label' for="textarea">Any Comments or Suggestions?</label>
+        <input id='textarea' type="textarea" name="textarea" placeholder="Enter your comment here...">
+        <br>
+        <input id='submit' type="submit" name="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>

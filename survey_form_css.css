@@ -1,0 +1,125 @@
+#main {
+  background-color: orange;
+  margin: auto;
+  padding-bottom: 200px;
+}
+
+#title {
+  text-align: center;
+  font-family: cursive;
+  margin: auto;
+  padding: 10px;
+}
+
+#description {
+  text-align: center;
+  font-family: monospace;
+}
+
+#survey-form {
+  background: gray;
+  margin: 0 auto;
+  max-width: 500px;
+  border-radius: 10px;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: autofill;
+  grid-gap: 10px;
+  grid-template-areas:
+    "name-label name"
+    "email-label email"
+    "number-label number"
+    "dropdown-label dropdown"
+    "radio-label radio"
+    "checkbox-label checkbox"
+    "textarea-label textarea"
+    "submit submit";
+}
+
+#name {
+  font-family: monospace;
+  grid-area: name;
+}
+
+#email {
+  font-family: monospace;
+  grid-area: email;
+}
+
+#number {
+  font-family: monospace;
+  grid-area: number;
+}
+
+#dropdown {
+  font-family: monospace;
+  grid-area: dropdown;
+}
+
+#radio {
+  font-family: monospace;
+  grid-area: radio;
+}
+
+#checkbox {
+  font-family: monospace;
+  grid-area: checkbox;
+}
+
+#textarea {
+  font-family: monospace;
+  grid-area: textarea;
+  height: 100px;
+  width: auto;
+}
+
+#submit {
+  font-family: monospace;
+  text-align: center;
+  grid-area: submit;
+  width: 100px;
+  margin: auto;
+}
+
+#name-label {
+  font-family: 'Oswald', sans-serif;
+  grid-area: name-label;
+  text-align: right;
+}
+
+#email-label {
+  font-family: 'Oswald', sans-serif;
+  grid-area: email-label;
+  text-align: right;
+}
+
+#number-label {
+  font-family: 'Oswald', sans-serif;
+  grid-area: number-label;
+  text-align: right;
+}
+
+#dropdown-label {
+  font-family: 'Oswald', sans-serif;
+  grid-area: dropdown-label;
+  text-align: right;
+}
+
+#recommend-radio-label {
+  font-family: 'Oswald', sans-serif;
+  grid-area: radio-label;
+  text-align: right;
+}
+
+#checkbox-label {
+  font-family: 'Oswald', sans-serif;
+  grid-area: checkbox-label;
+  text-align: right;
+}
+
+#textarea-label {
+  font-family: 'Oswald', sans-serif;
+  grid-area: textarea-label;
+  text-align: right;
+}
